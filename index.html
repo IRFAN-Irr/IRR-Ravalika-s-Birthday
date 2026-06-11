@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Ravalika</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div id="floatingWishes"></div>
+
+<section class="hero">
+
+<img src="images/cover.jpg" class="hero-img">
+
+<div class="hero-content">
+
+<h1>🎂 Happy Birthday 🎂</h1>
+
+<h2>Ravalika 🐯</h2>
+
+<p id="typingText"></p>
+
+<button id="enterBtn">
+Enter Birthday Experience
+</button>
+<br><br>
+
+<button id="secretBtn">
+💌 Secret Message
+</button>
+<br><br>
+
+<button id="factsBtn">
+🐯 Tigress Facts
+</button>
+<br><br>
+
+<button id="awardBtn">
+🏆 Best Friend Award
+</button>
+<br><br>
+
+<button id="dontBtn">
+🚨 Don't Click
+</button>
+<br><br>
+
+<button id="meterBtn">
+💖 Friendship Meter
+</button>
+<br><br>
+
+<div id="visitorBox">
+
+<h3>👀 Birthday Visitors</h3>
+
+<h1 id="visitorCount">
+12847
+</h1>
+
+</div>
+<br><br>
+
+<div id="giftBox">
+
+🎁
+
+</div>
+</div>
+
+
+</section>
+<section class="gallery">
+
+<h2>📸 Memories With Tigress 🐯</h2>
+
+<div class="gallery-grid">
+
+<img src="images/rooftop.jpg">
+
+<img src="images/gift.jpg">
+
+<img src="images/uno.jpg">
+
+<img src="images/umbrella.jpg">
+
+<img src="images/temple.jpg">
+
+<img src="images/angry.jpg">
+
+</div>
+
+</section>
+<section class="timeline-section">
+
+<h2>🎞 Our Journey</h2>
+
+<div class="timeline">
+
+<div class="timeline-card">
+<h3>📍 First Conversation</h3>
+<p>Still remember those random chats...</p>
+</div>
+
+<div class="timeline-card">
+<h3>📍 Unlimited Drama Era</h3>
+<p>Arguments, teasing and headaches 😂</p>
+</div>
+
+<div class="timeline-card">
+<h3>📍 Family Beyond Friendship</h3>
+<p>Some friends become family ❤️</p>
+</div>
+
+<div class="timeline-card">
+<h3>📍 Birthday 2026</h3>
+<p>Another memory added today ✨</p>
+</div>
+
+</div>
+
+</section>
+<section class="letter-section">
+
+<div class="letter-card">
+
+<h2>💌 A Letter To Tigress 💌</h2>
+
+<p>
+
+Dear Ravalika,
+
+Life mein bahut log milte hain,
+
+lekin har kisi ke saath
+itna hassna, ladna,
+aur yaadein banana and family mein ek member hona possible nahi hota.
+
+Thank you for every laugh,
+every argument,
+every random conversation,
+every headache,
+and every moment that became a memory.
+
+You are truly one of a kind.
+
+Stay bold.
+Stay confident.
+Stay unapologetic.
+
+And yes...
+
+Try not to give everyone headaches 😏
+
+Happy 28th Birthday, Tigress 🐯❤️
+
+<br><br>
+
+— Irfan
+
+</p>
+
+</div>
+
+</section>
+<section class="certificate-section">
+
+<div class="certificate">
+
+<h2>🏆 Certificate Of Survival 🏆</h2>
+
+<h3>Presented To</h3>
+
+<h1>🐯 Ravalika 🐯</h1>
+
+<p>
+
+For Successfully Surviving
+
+One More Year Of
+
+Irfan's Messages,
+
+Random Questions,
+
+Headache Problem's,
+
+And Unlimited Drama.
+
+</p>
+
+<div class="signatures">
+
+<div>
+<strong>Certified By</strong><br>
+Irfan
+</div>
+
+<div>
+<strong>Status</strong><br>
+Still Friends 😂
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="rating-section">
+
+<h2>⭐ Friendship Rating ⭐</h2>
+
+<div class="rating-card">
+
+<p>Drama ⭐⭐⭐⭐⭐</p>
+
+<p>Care ⭐⭐⭐⭐⭐</p>
+
+<p>Loyalty ⭐⭐⭐⭐⭐</p>
+
+<p>Memories ⭐⭐⭐⭐⭐</p>
+
+<p>Headache ⭐⭐⭐⭐⭐⭐ 😂</p>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+<div id="lightbox">
+
+<span id="closeLightbox">✖</span>
+
+<img id="lightboxImg" src="">
+
+</div>
+
+    
+
+<div id="messageModal">
+
+<div class="messageCard">
+
+<h2 id="messageTitle">💌 Message</h2>
+
+<p id="messageContent"></p>
+
+<button id="closeMessage">
+Close
+</button>
+
+</div>
+
+</div>
+
+<div id="friendshipModal">
+
+<div class="friendshipCard">
+
+<h2>💖 Friendship Meter 💖</h2>
+
+<div class="meterBox">
+
+<div id="meterFill"></div>
+
+</div>
+
+<h1 id="meterText">0%</h1>
+
+<p id="meterMessage"></p>
+
+<button id="closeMeter">
+Close
+</button>
+
+</div>
+
+</div>
+<div id="birthdayIntro">
+    <canvas id="fireworks"></canvas>
+
+<div class="introContent">
+<div class="balloon balloon1"></div>
+<div class="balloon balloon2"></div>
+<div class="balloon balloon3"></div>
+<div class="balloon balloon4"></div>
+<div class="balloon balloon5"></div>
+
+<h1>🎉 HAPPY BIRTHDAY 🎉</h1>
+
+<h2>🐯 RAVALIKA 🐯</h2>
+
+<p>
+28 Years of Drama, Memories & Happiness ❤️
+</p>
+
+<button id="startParty">
+✨ Enter Celebration ✨
+</button>
+
+</div>
+
+</div>
+<audio id="birthdayMusic" loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+<button id="musicToggle">🎵</button>
+</body>
+</html>
